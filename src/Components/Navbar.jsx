@@ -15,7 +15,7 @@ const Navbar = () => {
         <li>
           <a href="/applications">Apps</a>
         </li>
-        <li><a>Installation</a></li>
+        <li><a href="/installation">Installation</a></li>
       </ul>
     </div>
     <a href='/' className="btn btn-ghost text-xl flex">
@@ -29,7 +29,7 @@ const Navbar = () => {
       <li>
         <a href='/applications' className='hover:text-[#632EE3] hover:underline text-[16px] font-medium'>Apps</a>
       </li>
-      <li><a className='hover:text-[#632EE3] hover:underline text-[16px] font-medium'>Installation</a></li>
+      <li><a href="/installation" className='hover:text-[#632EE3] hover:underline text-[16px] font-medium'>Installation</a></li>
     </ul>
   </div>
   <div className="navbar-end">

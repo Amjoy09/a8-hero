@@ -4,7 +4,7 @@ const Footer = () => {
   return (
   <div className="bg-[#001931] px-12 py-8">
       <div className="flex justify-between items-center ">
-      <a href="/" className="btn btn-ghost text-xl flex">
+      <a href="/" className="btn bg-transparent border-0 shadow-none text-xl flex">
         <img className="h-10 w-10" src="logo.png" />
         <p className="text-white font-bold">
           HERO.IO
