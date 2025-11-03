@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="flex justify-between items-center ">
       <a href="/" className="btn bg-transparent border-0 shadow-none text-xl flex">
         <img className="h-10 w-10" src="logo.png" />
-        <p className="text-white font-bold">
+        <p className="text-white font-bold hover:scale-105">
           HERO.IO
         </p>
       </a>

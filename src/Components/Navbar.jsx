@@ -33,7 +33,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a target='_blank' href='https://github.com/Amjoy09/a8-hero' className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white"><img src="github.png" alt="" /> Contribute</a>
+    <a target='_blank' href='https://github.com/Amjoy09/a8-hero' className="btn rounded-[6px] bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white"><img src="github.png" alt="" /> Contribute</a>
   </div>
 </div>
     );

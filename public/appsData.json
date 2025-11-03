@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/3yYBB1gJ/unnamed.webp",
+    "title": "ChatSphere",
+    "companyName": "NovaTech Studios",
+    "id": 1,
+    "description": "A sleek and private chat app with end-to-end encryption and AI-powered suggestions.",
+    "size": 45,
+    "reviews": 13450,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 540 },
+      { "name": "3 star", "count": 1340 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 9150 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/04d0zwc/images.png",
+    "title": "FitTrack Pro",
+    "companyName": "ActivePulse Labs",
+    "id": 2,
+    "description": "Track your workouts, nutrition, and sleep with real-time insights and AI-based coaching.",
+    "size": 92,
+    "reviews": 8450,
+    "ratingAvg": 4.3,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 420 },
+      { "name": "2 star", "count": 650 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 3380 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/21BxbNDx/unnamed.png",
+    "title": "PhotoCraft Studio",
+    "companyName": "PixelSmith Inc.",
+    "id": 3,
+    "description": "Edit your photos with professional filters, overlays, and AI retouching tools.",
+    "size": 110,
+    "reviews": 22500,
+    "ratingAvg": 4.8,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 740 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 13800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LzMQxLMC/9110508.png",
+    "title": "BudgetEase",
+    "companyName": "FinFlow Analytics",
+    "id": 4,
+    "description": "Simplify your finances with budget tracking, bill reminders, and expense insights.",
+    "size": 36,
+    "reviews": 5630,
+    "ratingAvg": 4.2,
+    "downloads": 670000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 780 },
+      { "name": "4 star", "count": 1920 },
+      { "name": "5 star", "count": 2120 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/xbCp2LD/images.jpg",
+    "title": "SoundVibe Music",
+    "companyName": "WaveBeat Media",
+    "id": 5,
+    "description": "Stream high-quality music, create playlists, and discover trending artists worldwide.",
+    "size": 82,
+    "reviews": 42800,
+    "ratingAvg": 4.5,
+    "downloads": 5500000,
+    "ratings": [
+      { "name": "1 star", "count": 2300 },
+      { "name": "2 star", "count": 2900 },
+      { "name": "3 star", "count": 6700 },
+      { "name": "4 star", "count": 12100 },
+      { "name": "5 star", "count": 18800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ZzK25Rkp/unnamed-1.webp",
+    "title": "TravelMate",
+    "companyName": "GlobeNet Solutions",
+    "id": 6,
+    "description": "Plan your trips effortlessly with AI itinerary suggestions and real-time price alerts.",
+    "size": 67,
+    "reviews": 9800,
+    "ratingAvg": 4.4,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 520 },
+      { "name": "2 star", "count": 870 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 4010 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zWgsy7xS/images-1.jpg",
+    "title": "MindZen",
+    "companyName": "CalmTech Co.",
+    "id": 7,
+    "description": "Relax and meditate with guided sessions, ambient sounds, and mood trackers.",
+    "size": 53,
+    "reviews": 6500,
+    "ratingAvg": 4.7,
+    "downloads": 880000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 280 },
+      { "name": "3 star", "count": 680 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 3580 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/b01FYDG/images-2.jpg",
+    "title": "GameForge",
+    "companyName": "Playnetic Games",
+    "id": 8,
+    "description": "A one-stop platform for discovering, downloading, and managing mobile games.",
+    "size": 120,
+    "reviews": 21500,
+    "ratingAvg": 4.1,
+    "downloads": 2900000,
+    "ratings": [
+      { "name": "1 star", "count": 2200 },
+      { "name": "2 star", "count": 2600 },
+      { "name": "3 star", "count": 4700 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 8800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/xKxjqby3/unnamed-3.webp",
+    "title": "EduSpark",
+    "companyName": "Learnify Labs",
+    "id": 9,
+    "description": "Interactive online learning with live tutors, quizzes, and gamified progress tracking.",
+    "size": 95,
+    "reviews": 15800,
+    "ratingAvg": 4.6,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 430 },
+      { "name": "2 star", "count": 870 },
+      { "name": "3 star", "count": 1340 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 8960 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LdB8b67V/unnamed-1.png",
+    "title": "QuickScan PDF",
+    "companyName": "DocuSmart",
+    "id": 10,
+    "description": "Scan, sign, and share documents instantly with auto-cropping and OCR support.",
+    "size": 41,
+    "reviews": 6300,
+    "ratingAvg": 4.4,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 410 },
+      { "name": "3 star", "count": 920 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 2330 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/cXrpZqwB/images-3.jpg",
+    "title": "NotePlus",
+    "companyName": "WriteOn Studio",
+    "id": 11,
+    "description": "A modern note-taking app with cloud sync, Markdown, and collaboration tools.",
+    "size": 48,
+    "reviews": 7400,
+    "ratingAvg": 4.5,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 940 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 3210 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/7tmbfpwx/istockphoto-1687829806-612x612.jpg",
+    "title": "CookBook Master",
+    "companyName": "TastyBytes",
+    "id": 12,
+    "description": "Discover recipes, create meal plans, and track nutrition with AI recommendations.",
+    "size": 89,
+    "reviews": 9800,
+    "ratingAvg": 4.7,
+    "downloads": 1600000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 380 },
+      { "name": "3 star", "count": 890 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 5610 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/DHrDy5jz/pngtree-shopping-mall-logo-image-2235997.jpg",
+    "title": "ShopEase",
+    "companyName": "MarketFlow",
+    "id": 13,
+    "description": "Shop online securely, track deliveries, and get cashback on your favorite products.",
+    "size": 71,
+    "reviews": 18200,
+    "ratingAvg": 4.3,
+    "downloads": 3700000,
+    "ratings": [
+      { "name": "1 star", "count": 1600 },
+      { "name": "2 star", "count": 1900 },
+      { "name": "3 star", "count": 3800 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 6700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HDZ2bzqD/109906352-cloud-and-sun-weather-logo-design-template.jpg",
+    "title": "Weatherly",
+    "companyName": "SkyCast Systems",
+    "id": 14,
+    "description": "Real-time weather updates, radar maps, and long-range forecasts at your fingertips.",
+    "size": 38,
+    "reviews": 12400,
+    "ratingAvg": 4.2,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 1900 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 4100 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/WpsBpsCx/12482271-de-icone-de-motocicleta-para-design-grafico-logotipo-site-midia-social-aplicativo-movel-ilu.jpg",
+    "title": "RideOn",
+    "companyName": "UrbanMove",
+    "id": 15,
+    "description": "Book cabs, bikes, and shared rides quickly with transparent pricing and live tracking.",
+    "size": 83,
+    "reviews": 35200,
+    "ratingAvg": 4.0,
+    "downloads": 4800000,
+    "ratings": [
+      { "name": "1 star", "count": 4200 },
+      { "name": "2 star", "count": 4800 },
+      { "name": "3 star", "count": 7200 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/fd4RWy3M/crypto-vault-icon-vector.jpg",
+    "title": "CryptoVault",
+    "companyName": "BlockSecure",
+    "id": 16,
+    "description": "Buy, sell, and manage cryptocurrencies securely with real-time market insights.",
+    "size": 79,
+    "reviews": 8700,
+    "ratingAvg": 4.1,
+    "downloads": 1450000,
+    "ratings": [
+      { "name": "1 star", "count": 820 },
+      { "name": "2 star", "count": 950 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 3030 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/6JpJ9T9h/images-4.jpg",
+    "title": "Taskify",
+    "companyName": "ProductiveHub",
+    "id": 17,
+    "description": "Organize your work with tasks, projects, and deadlines synced across all devices.",
+    "size": 58,
+    "reviews": 6400,
+    "ratingAvg": 4.6,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 740 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 3050 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/8LqvKwHh/aeb2d95e496bee7c4e6ab7b2005a4c4d.webp",
+    "title": "Langify",
+    "companyName": "PolyLingua",
+    "id": 18,
+    "description": "Learn new languages through interactive lessons, AI tutors, and voice recognition.",
+    "size": 65,
+    "reviews": 17800,
+    "ratingAvg": 4.8,
+    "downloads": 2900000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 440 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 4600 },
+      { "name": "5 star", "count": 11340 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/s9CtghpM/mic-logo-symbol-for-tv-or-news-company-free-vector.jpg",
+    "title": "NewsStream",
+    "companyName": "InfoPulse Media",
+    "id": 19,
+    "description": "Stay informed with personalized breaking news, local updates, and trending topics.",
+    "size": 54,
+    "reviews": 9600,
+    "ratingAvg": 4.1,
+    "downloads": 1750000,
+    "ratings": [
+      { "name": "1 star", "count": 860 },
+      { "name": "2 star", "count": 1020 },
+      { "name": "3 star", "count": 1900 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 2820 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/C3cm5rhj/unnamed-2.png",
+    "title": "SleepyTime",
+    "companyName": "DreamWell Labs",
+    "id": 20,
+    "description": "Improve your sleep with relaxing sounds, sleep tracking, and bedtime reminders.",
+    "size": 50,
+    "reviews": 7200,
+    "ratingAvg": 4.7,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 780 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 3510 }
+    ]
+  }
+]
