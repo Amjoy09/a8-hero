@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router";
 
 const AppCard = ({app}) => {
-    const {image, title, description, downloads, ratingAvg} = app;
+    const {image, title, description, downloads, ratingAvg, id} = app;
   return (
-    <div className="card bg-base-100 shadow-sm p-5 hover:scale-105 transition ease-in-out hover:cursor-pointer">
+    <Link to={`/appDetails/${id}`} className="card bg-base-100 shadow-sm p-5 hover:scale-105 transition ease-in-out hover:cursor-pointer">
       <figure>
         <img className="h-[250px]"
           src={image}
@@ -22,7 +23,7 @@ const AppCard = ({app}) => {
           <div className="badge badge-outline">{ratingAvg}</div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

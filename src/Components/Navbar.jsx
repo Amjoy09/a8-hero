@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router';
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
     return (
@@ -15,17 +17,17 @@ const Navbar = () => {
         <li>
           <a href="/applications">Apps</a>
         </li>
-        <li><a href="/installation">Installation</a></li>
+        <li><a href="/installation">My Installation</a></li>
       </ul>
     </div>
     <a href='/' className="btn btn-ghost text-xl flex">
-       <img className='h-10 w-10' src="logo.png"/>
+       <img className='h-10 w-10' src={logo}/>
         <p className='bg-clip-text text-transparent bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold'>HERO.IO</p>
     </a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a href='/' className='hover:text-[#632EE3] hover:underline text-[16px] font-medium'>Home</a></li>
+      <li><Link to='/' className='hover:text-[#632EE3] hover:underline text-[16px] font-medium'>Home</Link></li>
       <li>
         <a href='/applications' className='hover:text-[#632EE3] hover:underline text-[16px] font-medium'>Apps</a>
       </li>
