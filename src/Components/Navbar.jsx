@@ -31,7 +31,7 @@ const Navbar = () => {
       <li>
         <a href='/applications' className='hover:text-[#632EE3] hover:underline text-[16px] font-medium'>Apps</a>
       </li>
-      <li><a href="/installation" className='hover:text-[#632EE3] hover:underline text-[16px] font-medium'>Installation</a></li>
+      <li><a href="/installation" className='hover:text-[#632EE3] hover:underline text-[16px] font-medium'>My Installation</a></li>
     </ul>
   </div>
   <div className="navbar-end">

@@ -19,10 +19,17 @@ const Installation = () => {
     }
   };
 
+  const handleRemove = (id) => {
+    const existingItems = JSON.parse(localStorage.getItem("installedApp"));
+    let updatedList = existingItems.filter((a) => a.id !== id);
+    setInstalledApp(updatedList);
+    localStorage.setItem("installedApp", JSON.stringify(updatedList));
+  };
+
   return (
     <div className="w-11/12 mx-auto mt-10 mb-20">
       <h1 className="text-5xl font-bold text-center">Your Installed Apps</h1>
-      <div className="flex items-center justify-between mt-20 mb-10">
+      <div className="flex flex-col md:flex-row gap-3 items-center justify-between mt-20 mb-10">
         <h2 className="text-[24px] font-semibold">
           {" "}
           {installedApp.length} Apps Installed
@@ -42,13 +49,16 @@ const Installation = () => {
 
       <div className="space-y-3 ">
         {sortedItems().map((a) => (
-          <div className="w-full h-[112px] bg-[#ffffff] rounded-lg flex items-center justify-between px-4">
+          <div className="w-full h-[112px] bg-[#ffffff] rounded-lg flex flex-col md:flex-row items-center justify-between px-4">
             <div className="flex items-center gap-3">
               <figure>
                 <img className="h-20 w-20 rounded-lg" src={a.image} alt="" />
               </figure>
               <div>
-                <h2 className="text-[20px] font-medium">{a.title}</h2>
+                <div className="flex items-center">
+                  <h2 className="text-[20px] font-medium">{a.title}:</h2>
+                  <p className="text-[20px] font-medium">{a.slogan}</p>
+                </div>
                 <div className="flex gap-4 items-center">
                   <p className="flex items-center gap-[3px] text-[#00D390]">
                     <img className="h-4 w-4" src="icon-downloads.png" alt="" />
@@ -62,7 +72,12 @@ const Installation = () => {
                 </div>
               </div>
             </div>
-            <button className="text-white bg-[#00D390] px-5 py-1.5 h-10 rounded-[3px] hover:cursor-pointer hover:bg-red-800">
+            <button
+              onClick={() => {
+                handleRemove(a.id), alert("App Uninstalled 🗑");
+              }}
+              className="text-white bg-[#00D390] px-5 py-1.5 h-10 rounded-[3px] hover:cursor-pointer hover:bg-red-800"
+            >
               Uninstall
             </button>
           </div>
