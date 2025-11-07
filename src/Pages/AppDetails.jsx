@@ -6,6 +6,7 @@ import ratingIcon from "../assets/icon-ratings.png";
 import reviewIcon from "../assets/icon-review.png";
 import MyBarChart from "../Components/MyBarChart";
 import LoadingSpinner from "../Components/LoadingSpinner";
+import { toast } from "react-toastify";
 
 const AppDetails = () => {
   const [isBtnDisabled, setIsBtnDisabled] = useState(false);
@@ -38,7 +39,7 @@ const AppDetails = () => {
     if (existingItems) {
       const isDuplicate = existingItems.some((a) => a.id === app.id);
       if (isDuplicate) {
-        alert("This App is already installed...");
+        toast("This App is already installed 🛑");
          return false;
       }
       updatedList = [...existingItems, app];
@@ -61,12 +62,12 @@ const AppDetails = () => {
         </figure>
         <div className="CARD-BODY w-full ml-0 md:ml-8">
           <div className="flex justify-center md:justify-normal">
-            <h2 className="card-title text-[24px] md:text-[32px] font-bold">{title}:</h2>
-            <p className="text-[24px] md:text-[32px] font-bold">{slogan}</p>
+            <h2 className="card-title text-[20px] md:text-[32px] font-bold">{title}:</h2>
+            <p className="text-[20px] md:text-[32px] font-bold">{slogan}</p>
           </div>
           <p className="text-lg text-[#627382] text-center md:text-left">
             Developed by:
-            <span className="text-[#632EE3] text-xl font-semibold">
+            <span className="text-[#632EE3] text-lg md:text-xl font-semibold">
               {" "}
               {companyName}
             </span>
@@ -99,7 +100,7 @@ const AppDetails = () => {
               handleClick();
               const success = handleAddToInstalledApp();
               if (success){
-               alert("Let the Installing process to start?");
+               toast("App is installed successfully🎉🎈");
               }
             }}
             disabled={isBtnDisabled}

@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import useApps from "../Hooks/useApps";
 import AppCard from "../Components/appCard";
+import LoadingSpinner from "../Components/LoadingSpinner";
 
 const Applications = () => {
-  const { apps } = useApps();
+  const { apps, loading } = useApps();
   const [search, setSearch] = useState("");
   const term = search.trim().toLowerCase();
   const searchedApps = term
     ? apps.filter((app) => app.title.toLowerCase().includes(term))
     : apps;
+
+     if (loading) return <LoadingSpinner/>;
 
   return (
     <div className="APPS-SECTION w-11/12 mx-auto">

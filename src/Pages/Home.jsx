@@ -3,11 +3,14 @@ import Banner from "../Components/Banner";
 import useApps from "../Hooks/useApps";
 import AppCard from "../Components/appCard";
 import { Link } from "react-router";
+import LoadingSpinner from "../Components/LoadingSpinner";
 
 const Home = () => {
   const { apps, loading, error } = useApps();
   const featuredApps = apps.slice(0, 8);
-
+if (loading){
+    return <LoadingSpinner/>
+}
   return (
     <div>
       <Banner />

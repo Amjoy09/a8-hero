@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
+import useApps from "../Hooks/useApps";
+import LoadingSpinner from "../Components/LoadingSpinner";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const [installedApp, setInstalledApp] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
+  const { loading } = useApps();
+
+   
 
   useEffect(() => {
     const savedList = JSON.parse(localStorage.getItem("installedApp"));
@@ -25,6 +31,7 @@ const Installation = () => {
     setInstalledApp(updatedList);
     localStorage.setItem("installedApp", JSON.stringify(updatedList));
   };
+   if (loading) return <LoadingSpinner/>;
 
   return (
     <div className="w-11/12 mx-auto mt-10 mb-20">
@@ -81,7 +88,7 @@ const Installation = () => {
             </div>
             <button
               onClick={() => {
-                handleRemove(a.id), alert("Are You Sure to Uninstall the App? 🗑");
+                handleRemove(a.id), toast("App is Uninstalled 🗑");
               }}
               className="text-white text-[12px] md:text-[18px] md:bg-[#00D390] bg-red-800 px-5 py-1 md:py-2 h-12 rounded-[3px] hover:cursor-pointer hover:bg-red-800"
             >

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 const AppCard = ({ app }) => {
-  const { image, title, downloads, ratingAvg, id, slogan, description } = app;
+  const { image, title, downloads, ratingAvg, id, slogan } = app;
   return (
     <Link
       to={`/appDetails/${id}`}
