@@ -9,22 +9,14 @@ import {
   Legend,
 } from "recharts";
 
-// #region Sample data
-const data =  [
-      { "name": "5 star", "count": 9150 },
-      { "name": "4 star", "count": 4100 },
-      { "name": "3 star", "count": 1340 },
-      { "name": "2 star", "count": 540 },
-      { "name": "1 star", "count": 320 }
-    ]
 
-// #endregion
-const MyBarChart = () => {
+const MyBarChart = ({app}) => {
+
   return (
     <BarChart
       style={{ width: "100%", aspectRatio: 1.618 }}
       responsive
-      data={data}
+      data={app.ratings}
       layout="vertical"
       margin={{
         top: 5,
@@ -37,7 +29,7 @@ const MyBarChart = () => {
       <XAxis width="auto" />
       <YAxis dataKey="name" />
       <XAxis type="number" />
-      <YAxis dataKey="name" type="category" />
+      <YAxis dataKey="name" type="category" reversed  />
       <Tooltip />
       <Legend />
      

@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../Components/Banner";
 import useApps from "../Hooks/useApps";
 import AppCard from "../Components/appCard";
+import { Link } from "react-router";
 
 const Home = () => {
   const { apps, loading, error } = useApps();
@@ -24,9 +25,9 @@ const Home = () => {
       </div>
 
       <div className="w-max mx-auto mt-12 mb-20">
-        <a href="/applications" className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white px-7 py-2 text-[16px] rounded-sm font-semibold hover:cursor-pointer">
+        <Link to="/applications" className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white px-6 py-3 text-[18px] rounded-sm font-medium hover:cursor-pointer">
           Show All
-        </a>
+        </Link>
       </div>
     </div>
   );

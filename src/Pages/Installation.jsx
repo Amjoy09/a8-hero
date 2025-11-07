@@ -29,23 +29,30 @@ const Installation = () => {
   return (
     <div className="w-11/12 mx-auto mt-10 mb-20">
       <h1 className="text-5xl font-bold text-center">Your Installed Apps</h1>
-      <div className="flex flex-col md:flex-row gap-3 items-center justify-between mt-20 mb-10">
-        <h2 className="text-[24px] font-semibold">
-          {" "}
-          {installedApp.length} Apps Installed
-        </h2>
-        <label className="form-control w-full max-w-xs">
-          <select
-            className="select select-bordered"
-            value={sortOrder}
-            onChange={(e) => setSortOrder(e.target.value)}
-          >
-            <option value="none">Sort by Size</option>
-            <option value="size-asc">Low-&gt;High</option>
-            <option value="size-desc">High-&gt;Low</option>
-          </select>
-        </label>
-      </div>
+
+      {installedApp.length === 0 ? (
+        <div className="flex h-100 justify-center items-center">
+            <p className="text-3xl md:text-6xl font-semibold text-gray-600 ">No Installed App Here</p>
+        </div>
+      ) : (
+        <div className="flex flex-col md:flex-row gap-3 items-center justify-between mt-20 mb-10">
+          <h2 className="text-[24px] font-semibold">
+            {" "}
+            {installedApp.length} Apps Installed
+          </h2>
+          <label className="form-control w-full max-w-xs">
+            <select
+              className="select select-bordered"
+              value={sortOrder}
+              onChange={(e) => setSortOrder(e.target.value)}
+            >
+              <option value="none">Sort by Size</option>
+              <option value="size-asc">Low-&gt;High</option>
+              <option value="size-desc">High-&gt;Low</option>
+            </select>
+          </label>
+        </div>
+      )}
 
       <div className="space-y-3 ">
         {sortedItems().map((a) => (
@@ -56,8 +63,8 @@ const Installation = () => {
               </figure>
               <div>
                 <div className="flex items-center">
-                  <h2 className="text-[20px] font-medium">{a.title}:</h2>
-                  <p className="text-[20px] font-medium">{a.slogan}</p>
+                  <h2 className="text-[15px] md:text-[22px] font-semibold">{a.title}:</h2>
+                  <p className="text-[15px] md:text-[22px] font-semibold">{a.slogan}</p>
                 </div>
                 <div className="flex gap-4 items-center">
                   <p className="flex items-center gap-[3px] text-[#00D390]">
@@ -74,9 +81,9 @@ const Installation = () => {
             </div>
             <button
               onClick={() => {
-                handleRemove(a.id), alert("App Uninstalled 🗑");
+                handleRemove(a.id), alert("Are You Sure to Uninstall the App? 🗑");
               }}
-              className="text-white bg-[#00D390] px-5 py-1.5 h-10 rounded-[3px] hover:cursor-pointer hover:bg-red-800"
+              className="text-white text-[12px] md:text-[18px] md:bg-[#00D390] bg-red-800 px-5 py-1 md:py-2 h-12 rounded-[3px] hover:cursor-pointer hover:bg-red-800"
             >
               Uninstall
             </button>

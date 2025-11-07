@@ -10,9 +10,6 @@ const Applications = () => {
     ? apps.filter((app) => app.title.toLowerCase().includes(term))
     : apps;
 
-    console.log(searchedApps);
-    
-
   return (
     <div className="APPS-SECTION w-11/12 mx-auto">
       <div className="SECTION-TEXTS text-center mt-15 mb-10">
@@ -21,10 +18,13 @@ const Applications = () => {
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
+
       <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-10">
-        <p className="text-[24px] font-semibold">
+        {
+            searchedApps.length === 0 ?  "⭕" : <p className="text-[24px] font-semibold">
           (<span>{searchedApps.length}</span>) Apps Found
         </p>
+        }
 
         <label className="input">
           <svg
@@ -53,11 +53,17 @@ const Applications = () => {
         </label>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 pb-15">
-        {searchedApps.map((app) => (
-          <AppCard key={app.id} app={app}></AppCard>
-        ))}
-      </div>
+      {searchedApps.length === 0 ? (
+        <div className="flex justify-center items-center max-h-screen">
+          <p className="text-3xl md:text-6xl md:mb-0 mb-7 font-semibold text-gray-600">No Apps Found</p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 pb-15">
+          {searchedApps.map((app) => (
+            <AppCard key={app.id} app={app}></AppCard>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
